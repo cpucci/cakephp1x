@@ -101,7 +101,7 @@ class DbConfigTask extends Shell {
 			$driver = '';
 
 			while ($driver == '') {
-				$driver = $this->in('Driver:', array('db2', 'firebird', 'mssql', 'mysql', 'mysqli', 'odbc', 'oracle', 'postgres', 'sqlite', 'sybase'), 'mysql');
+				$driver = $this->in('Driver:', array('db2', 'firebird', 'mssql', 'mssqlnative', 'mysql', 'mysqli', 'odbc', 'oracle', 'postgres', 'sqlite', 'sybase'), 'mysql');
 			}
 			$persistent = '';
 
